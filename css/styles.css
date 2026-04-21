@@ -39,6 +39,10 @@ section {
   align-items: center;
   min-height: 100vh;
 }
+
+a[hreflang="ja"]::after {
+  content: " [en japonais]";
+}
 /*------------------------------------------------------------------------------
    Mise en page
 ------------------------------------------------------------------------------*/
@@ -68,6 +72,8 @@ h2 {
 header {
   text-align: center;
   position: relative;
+   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 header a {
@@ -100,9 +106,9 @@ header a {
   text-align: center;
 }
 
- a img {
-   width: 100%;
-   margin-bottom: 10px;
+a img {
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 h2 span {
@@ -113,47 +119,68 @@ h2 span {
 }
 /* Section sports */
 .sports {
-   background: url(..//images/fond/bicycles.png) repeat;
+  background: url(..//images/fond/bicycles.png) repeat;
+  background-attachment: fixed, scroll;
 }
 /* Section web */
-.web{
-   background: url(..//images/fond/science.png )repeat;
+.web {
+  background: url(..//images/fond/science.png) repeat;
+  background-attachment: fixed, scroll;
 }
-.web img{
-   width: 50%;
-}
-
-.web .images span{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-bottom: 50px;
+.web img {
+  width: 50%;
 }
 
-.lien_float  {
-   background-color: darkred ;
-   padding: 10px;
-   text-align: center;
+.web .images span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
- .lien_float a:hover{
-   text-decoration: underline;
-   color: white;
+.lien_float {
+  background-color: darkred;
+  padding: 10px;
+  text-align: center;
+}
+
+.lien_float a:hover {
+  text-decoration: underline;
+  color: white;
 }
 /* Section photographie */
-.photos{
-   background: url(../images/fond/fond.jpg) no-repeat;
-   background-size: cover;
+.photos {
+  background: url(../images/fond/fond.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed, scroll;
 }
 
 .photos img {
-   width: 30%;
+  width: 30%;
 }
 
 .photos .images {
-   display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 /* Bouton retour */
+.haut{
+width: 40px;
+height: 40px;
+background-color: rgba(255, 255, 255, 0.8);
+border: 4px solid white;
+border-radius: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+position: fixed;
+bottom: 20px;
+right: 15vw;
+
+}
+
+.haut:hover{
+   border: 4px solid darkorange;
+}
