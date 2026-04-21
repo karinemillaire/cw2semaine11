@@ -1,0 +1,66 @@
+/*----------------------------------------------------------------------------
+    Reset
+----------------------------------------------------------------------------*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*------------------------------------------------------------------------------
+   Base
+------------------------------------------------------------------------------*/
+body{
+   background: url(../images/fond/global.png) repeat;
+   background-color: black;
+   font: normal 1rem "Oranienbaum", serif ;
+   color: white;
+}
+
+a {
+   color: white;
+   text-decoration: none;
+}
+
+a:hover{
+   color:darkorange  ;
+}
+header, section{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+}
+/*------------------------------------------------------------------------------
+   Mise en page
+------------------------------------------------------------------------------*/
+.boite{
+   width: 800px;
+   padding: 48px;
+   background-color: rgba(0,0, 0, 0.8);
+   border-radius: 10px;
+}
+/*----------------------------------------------------------------------------
+    Elements
+----------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------
+   Components
+------------------------------------------------------------------------------*/
+
+/* Header */
+
+/* Section Générale */
+
+/* Section sports */
+
+/* Section web */
+
+/* Section photographie */
+
+/* Bouton retour */
