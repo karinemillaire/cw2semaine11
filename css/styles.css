@@ -123,10 +123,37 @@ h2 span {
    width: 50%;
 }
 
-.web .images {
+.web .images span{
    display: flex;
-   
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 50px;
+}
+
+.lien_float  {
+   background-color: darkred ;
+   padding: 10px;
+   text-align: center;
+}
+
+ .lien_float a:hover{
+   text-decoration: underline;
+   color: white;
 }
 /* Section photographie */
+.photos{
+   background: url(../images/fond/fond.jpg) no-repeat;
+   background-size: cover;
+}
 
+.photos img {
+   width: 30%;
+}
+
+.photos .images {
+   display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
 /* Bouton retour */
