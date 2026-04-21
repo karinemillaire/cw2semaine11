@@ -15,52 +15,118 @@ html {
 /*------------------------------------------------------------------------------
    Base
 ------------------------------------------------------------------------------*/
-body{
-   background: url(../images/fond/global.png) repeat;
-   background-color: black;
-   font: normal 1rem "Oranienbaum", serif ;
-   color: white;
+body {
+  background: url(../images/fond/global.png) repeat;
+  background-color: black;
+  font:
+    normal 1rem "Oranienbaum",
+    serif;
+  color: white;
 }
 
 a {
-   color: white;
-   text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
-a:hover{
-   color:darkorange  ;
+a:hover {
+  color: darkorange;
 }
-header, section{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   min-height: 100vh;
+header,
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 /*------------------------------------------------------------------------------
    Mise en page
 ------------------------------------------------------------------------------*/
-.boite{
-   width: 800px;
-   padding: 48px;
-   background-color: rgba(0,0, 0, 0.8);
-   border-radius: 10px;
-}
+
 /*----------------------------------------------------------------------------
     Elements
 ----------------------------------------------------------------------------*/
 
+h1 {
+  font:
+    normal 6.25rem "Monoton",
+    sans-serif;
+}
+
+h2 {
+  font:
+    normal 2rem "Monoton",
+    sans-serif;
+  margin: 0;
+  text-transform: uppercase;
+}
 /*------------------------------------------------------------------------------
    Components
 ------------------------------------------------------------------------------*/
 
 /* Header */
+header {
+  text-align: center;
+  position: relative;
+}
+
+header a {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
 
 /* Section Générale */
+.boite {
+  width: 800px;
+  padding: 48px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
 
+.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.images a {
+  width: 200px;
+  margin-top: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+ a img {
+   width: 100%;
+   margin-bottom: 10px;
+}
+
+h2 span {
+  font:
+    normal 1.06rem "Oranienbaum",
+    serif;
+  text-transform: capitalize;
+}
 /* Section sports */
-
+.sports {
+   background: url(..//images/fond/bicycles.png) repeat;
+}
 /* Section web */
+.web{
+   background: url(..//images/fond/science.png )repeat;
+}
+.web img{
+   width: 50%;
+}
 
+.web .images {
+   display: flex;
+   
+}
 /* Section photographie */
 
 /* Bouton retour */
