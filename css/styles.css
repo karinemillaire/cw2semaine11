@@ -160,13 +160,20 @@ h2 span {
 .photos img {
   width: 30%;
 }
+.photos a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
-.photos .images {
+.photos .images  {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+  text-align: center;
+}*/
 /* Bouton retour */
 .haut{
 width: 40px;
