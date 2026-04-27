@@ -6,7 +6,7 @@ html {
   box-sizing: border-box;
 }
 html {
-  scroll-behavior: smooth;
+   scroll-behavior: smooth;
 }
 *,
 *:before,
@@ -74,8 +74,6 @@ h2 {
 header {
   text-align: center;
   position: relative;
-   overflow-y: scroll;
-  scroll-behavior: smooth;
 }
 
 header a {
@@ -121,12 +119,12 @@ h2 span {
 }
 /* Section sports */
 .sports {
-  background: url(..//images/fond/bicycles.png) repeat;
+  background: url(../images/fond/bicycles.png) repeat;
   background-attachment: fixed, scroll;
 }
 /* Section web */
 .web {
-  background: url(..//images/fond/science.png) repeat;
+  background: url(../images/fond/science.png) repeat;
   background-attachment: fixed, scroll;
 }
 .web img {
